@@ -73,8 +73,8 @@ section{padding:100px 0;}
 
 /* DESTINATIONS */
 #destinations{background:var(--cream);}
-.dest-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:60px;}
-.dest-card{position:relative;border-radius:2px;overflow:hidden;text-decoration:none;display:block;aspect-ratio:3/4;}
+.dest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px;}
+.dest-card{position:relative;border-radius:2px;overflow:hidden;text-decoration:none;display:block;aspect-ratio:2/3;}
 .dest-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease;filter:brightness(.65);}
 .dest-card:hover img{transform:scale(1.06);filter:brightness(.5);}
 .dest-card-body{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:40px 36px;background:linear-gradient(to top,rgba(20,18,15,.7) 0%,transparent 55%);}
@@ -156,15 +156,18 @@ footer{background:var(--dark);color:rgba(255,255,255,.45);text-align:center;padd
   nav{padding:0 24px;}
   .nav-links{display:none;}
   .hamburger{display:flex;}
-  .about-grid,.dest-grid,.services-intro,.collab-grid,.contact-grid{grid-template-columns:1fr;gap:48px;}
+  .about-grid,.services-intro,.collab-grid,.contact-grid{grid-template-columns:1fr;gap:48px;}
+  .dest-grid{grid-template-columns:1fr 1fr;gap:16px;}
   .services-grid{grid-template-columns:1fr 1fr;}
   .contact-img-stack{height:300px;}
   section{padding:72px 0;}
   .about-img{aspect-ratio:3/2;}
-  .dest-card{aspect-ratio:4/5;}
+  .dest-card{aspect-ratio:3/4;}
 }
 @media(max-width:600px){
   .services-grid{grid-template-columns:1fr;}
+  .dest-grid{grid-template-columns:1fr;}
+  .dest-card{aspect-ratio:4/3;}
   .container{padding:0 24px;}
   .pillars{grid-template-columns:1fr;}
   #cookie-bar{padding:14px 20px;}
@@ -214,7 +217,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.45);text-align:center;padd
       <span data-it="Le Stanze di Roma" data-en="Le Stanze di Roma">Le Stanze di Roma</span><br>
       <em data-it="&amp; Le Stanze di Sharm" data-en="&amp; Le Stanze di Sharm">&amp; Le Stanze di Sharm</em>
     </h1>
-    <p class="hero-sub" data-it="Ospitalità, comfort e libertà di viaggio tra Roma e il Mar Rosso." data-en="Hospitality, comfort and freedom of travel between Rome and the Red Sea.">Ospitalità, comfort e libertà di viaggio tra Roma e il Mar Rosso.</p>
+    <p class="hero-sub" data-it="Ospitalità, comfort e libertà di viaggio tra Roma, il Cicolano e il Mar Rosso." data-en="Hospitality, comfort and freedom of travel between Rome, Cicolano and the Red Sea.">Ospitalità, comfort e libertà di viaggio tra Roma, il Cicolano e il Mar Rosso.</p>
     <div class="hero-cta">
       <a class="btn-primary" href="#destinations" data-it="Scopri le destinazioni" data-en="Explore destinations">Scopri le destinazioni</a>
       <a class="btn-outline"  href="#contact"      data-it="Contattaci"            data-en="Contact us">Contattaci</a>
@@ -239,7 +242,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.45);text-align:center;padd
         <p class="section-label" data-it="Chi Siamo" data-en="About Us">Chi Siamo</p>
         <h2 class="section-title" data-it="Un progetto nato<br>dalla <em>passione</em><br>per i viaggi" data-en="A project born<br>from a <em>passion</em><br>for travel">Un progetto nato<br>dalla <em>passione</em><br>per i viaggi</h2>
         <div class="divider"></div>
-        <p class="section-text" data-it="Le Stanze di Roma e Le Stanze di Sharm sono un progetto di ospitalità turistica creato da Massimiliano De Santis della MDS Properties. L'idea nasce dalla passione per i viaggi e dall'esperienza nel settore turistico, con l'obiettivo di creare spazi accoglienti dedicati ai viaggiatori provenienti da tutto il mondo." data-en="Le Stanze di Roma and Le Stanze di Sharm are a tourism hospitality project created by Massimiliano De Santis of MDS Properties. The idea stems from a passion for travel and experience in the tourism sector, with the aim of creating welcoming spaces for travellers from around the world.">Le Stanze di Roma e Le Stanze di Sharm sono un progetto di ospitalità turistica creato da Massimiliano De Santis della MDS Properties. L'idea nasce dalla passione per i viaggi e dall'esperienza nel settore turistico, con l'obiettivo di creare spazi accoglienti dedicati ai viaggiatori provenienti da tutto il mondo.</p>
+        <p class="section-text" data-it="Le Stanze di Roma, Le Stanze di Pescorocchiano e Le Stanze di Sharm sono progetti di ospitalità turistica creati da Massimiliano De Santis della MDS Properties. L'idea nasce dalla passione per i viaggi e dall'esperienza nel settore turistico, con l'obiettivo di creare spazi accoglienti dedicati ai viaggiatori provenienti da tutto il mondo." data-en="Le Stanze di Roma, Le Stanze di Pescorocchiano and Le Stanze di Sharm are tourism hospitality projects created by Massimiliano De Santis of MDS Properties. The idea stems from a passion for travel and experience in the tourism sector, with the aim of creating welcoming spaces for travellers from around the world.">Le Stanze di Roma, Le Stanze di Pescorocchiano e Le Stanze di Sharm sono progetti di ospitalità turistica creati da Massimiliano De Santis della MDS Properties. L'idea nasce dalla passione per i viaggi e dall'esperienza nel settore turistico, con l'obiettivo di creare spazi accoglienti dedicati ai viaggiatori provenienti da tutto il mondo.</p>
         <div class="pillars">
           <div class="pillar"><p data-it="Ospitalità autentica"   data-en="Authentic hospitality">Ospitalità autentica</p></div>
           <div class="pillar"><p data-it="Ambienti curati"        data-en="Refined spaces">Ambienti curati</p></div>
@@ -256,7 +259,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.45);text-align:center;padd
   <div class="container">
     <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto;">
       <p class="section-label" data-it="Le Nostre Destinazioni" data-en="Our Destinations">Le Nostre Destinazioni</p>
-      <h2 class="section-title" data-it="Due destinazioni,<br><em>un'unica</em> qualità" data-en="Two destinations,<br><em>one</em> quality">Due destinazioni,<br><em>un'unica</em> qualità</h2>
+      <h2 class="section-title" data-it="Tre destinazioni,<br><em>un'unica</em> qualità" data-en="Three destinations,<br><em>one</em> quality">Tre destinazioni,<br><em>un'unica</em> qualità</h2>
     </div>
     <div class="dest-grid">
       <div class="dest-card reveal">
@@ -277,6 +280,15 @@ footer{background:var(--dark);color:rgba(255,255,255,.45);text-align:center;padd
           <a class="dest-link" href="https://lestanzedisharm.com/" target="_blank" rel="noopener" data-it="Visita il sito &#8594;" data-en="Visit website &#8594;">Visita il sito &#8594;</a>
         </div>
       </div>
+      <div class="dest-card reveal">
+        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=900&q=80" alt="Pescorocchiano – Cicolano" loading="lazy">
+        <div class="dest-card-body">
+          <p class="dest-tag" data-it="Italia · Rieti · Cicolano" data-en="Italy · Rieti · Cicolano">Italia · Rieti · Cicolano</p>
+          <h3 data-it="Le Stanze di<br>Pescorocchiano" data-en="Le Stanze di<br>Pescorocchiano">Le Stanze di<br>Pescorocchiano</h3>
+          <p data-it="Appartamento intero di 70 m² in un borgo del Cicolano, a 20 minuti dal Lago del Salto. Fino a 5 ospiti, colazione e parcheggio inclusi." data-en="A complete 70 m² apartment in a Cicolano village, 20 minutes from Lago del Salto. Up to 5 guests, breakfast and parking included.">Appartamento intero di 70 m² in un borgo del Cicolano, a 20 minuti dal Lago del Salto. Fino a 5 ospiti, colazione e parcheggio inclusi.</p>
+          <a class="dest-link" href="https://www.lestanzedipescorocchiano.it/" target="_blank" rel="noopener" data-it="Visita il sito &#8594;" data-en="Visit website &#8594;">Visita il sito &#8594;</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -290,7 +302,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.45);text-align:center;padd
         <h2 class="section-title" data-it="Servizi pensati<br>per <em>ospiti</em><br>e proprietari" data-en="Services designed<br>for <em>guests</em><br>and owners">Servizi pensati<br>per <em>ospiti</em><br>e proprietari</h2>
       </div>
       <div class="reveal">
-        <p class="section-text" style="margin-top:16px" data-it="Ci occupiamo di ospitalità turistica e gestione di camere e appartamenti per affitti brevi, garantendo un'esperienza semplice e piacevole in due delle destinazioni più belle al mondo." data-en="We deal with tourism hospitality and management of rooms and apartments for short-term rentals, ensuring a simple and enjoyable experience in two of the most beautiful destinations in the world.">Ci occupiamo di ospitalità turistica e gestione di camere e appartamenti per affitti brevi, garantendo un'esperienza semplice e piacevole in due delle destinazioni più belle al mondo.</p>
+        <p class="section-text" style="margin-top:16px" data-it="Ci occupiamo di ospitalità turistica e gestione di camere e appartamenti per affitti brevi, garantendo un'esperienza semplice e piacevole a Roma, nel Cicolano e a Sharm El Sheikh." data-en="We deal with tourism hospitality and management of rooms and apartments for short-term rentals, ensuring a simple and enjoyable experience in Rome, Cicolano and Sharm El Sheikh.">Ci occupiamo di ospitalità turistica e gestione di camere e appartamenti per affitti brevi, garantendo un'esperienza semplice e piacevole a Roma, nel Cicolano e a Sharm El Sheikh.</p>
       </div>
     </div>
     <div class="services-grid reveal">
@@ -328,6 +340,51 @@ footer{background:var(--dark);color:rgba(255,255,255,.45);text-align:center;padd
   </div>
 </section>
 
+<!-- SERENO VACANZE -->
+<section id="sereno" style="background:var(--sand);padding:100px 0;">
+  <div class="container">
+    <div class="collab-grid">
+      <div class="reveal">
+        <p class="section-label" data-it="Partnership" data-en="Partnership">Partnership</p>
+        <h2 class="section-title" data-it="MDS Properties<br>su <em>Sereno Vacanze</em>" data-en="MDS Properties<br>on <em>Sereno Vacanze</em>">MDS Properties<br>su <em>Sereno Vacanze</em></h2>
+        <p class="section-text" data-it="Massimiliano De Santis è Responsabile Sviluppo di Sereno Vacanze per l'Italia e l'Egitto. Sereno Vacanze è il marketplace delle strutture indipendenti: zero commissioni sulle prenotazioni, 3 mesi gratuiti per iniziare." data-en="Massimiliano De Santis is the Development Manager for Sereno Vacanze in Italy and Egypt. Sereno Vacanze is the marketplace for independent properties: zero booking commissions, 3 free months to get started.">Massimiliano De Santis è Responsabile Sviluppo di Sereno Vacanze per l'Italia e l'Egitto. Sereno Vacanze è il marketplace delle strutture indipendenti: zero commissioni sulle prenotazioni, 3 mesi gratuiti per iniziare.</p>
+        <ul class="collab-list" style="margin-top:28px;">
+          <li style="color:var(--mid);" data-it="0% di commissioni sulle prenotazioni" data-en="0% booking commissions">0% di commissioni sulle prenotazioni</li>
+          <li style="color:var(--mid);" data-it="3 mesi gratuiti, nessuna carta richiesta" data-en="3 free months, no card required">3 mesi gratuiti, nessuna carta richiesta</li>
+          <li style="color:var(--mid);" data-it="Prenotazioni dirette tra ospite e host" data-en="Direct bookings between guest and host">Prenotazioni dirette tra ospite e host</li>
+          <li style="color:var(--mid);" data-it="Presente in Italia e in Egitto" data-en="Active in Italy and Egypt">Presente in Italia e in Egitto</li>
+        </ul>
+        <a class="btn-primary" href="https://serenovacanze.com/diventa-host?paese=IT&ref=MASSIMILIANO-IT" target="_blank" rel="noopener" style="display:inline-block;margin-top:36px;" data-it="Registra la tua struttura" data-en="Register your property">Registra la tua struttura</a>
+      </div>
+      <div class="reveal" style="display:flex;align-items:center;justify-content:center;">
+        <div style="display:flex;flex-direction:column;gap:16px;width:100%;max-width:360px;">
+          <div style="background:var(--white);border-radius:4px;padding:28px 32px;box-shadow:0 4px 24px rgba(0,0,0,0.06);display:flex;align-items:center;gap:20px;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:600;color:var(--gold);line-height:1;flex-shrink:0;">0%</div>
+            <div>
+              <p style="font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;" data-it="Commissioni" data-en="Commissions">Commissioni</p>
+              <p style="font-size:.88rem;color:var(--mid);line-height:1.5;" data-it="Nessuna commissione sulle prenotazioni ricevute" data-en="No commission on bookings received">Nessuna commissione sulle prenotazioni ricevute</p>
+            </div>
+          </div>
+          <div style="background:var(--white);border-radius:4px;padding:28px 32px;box-shadow:0 4px 24px rgba(0,0,0,0.06);display:flex;align-items:center;gap:20px;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:600;color:var(--gold);line-height:1;flex-shrink:0;">3</div>
+            <div>
+              <p style="font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;" data-it="Mesi gratuiti" data-en="Free months">Mesi gratuiti</p>
+              <p style="font-size:.88rem;color:var(--mid);line-height:1.5;" data-it="Per iniziare, senza carta di credito richiesta" data-en="To get started, no credit card required">Per iniziare, senza carta di credito richiesta</p>
+            </div>
+          </div>
+          <div style="background:var(--white);border-radius:4px;padding:28px 32px;box-shadow:0 4px 24px rgba(0,0,0,0.06);display:flex;align-items:center;gap:20px;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:600;color:var(--gold);line-height:1;flex-shrink:0;">2</div>
+            <div>
+              <p style="font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;" data-it="Mercati attivi" data-en="Active markets">Mercati attivi</p>
+              <p style="font-size:.88rem;color:var(--mid);line-height:1.5;" data-it="Italia ed Egitto, seguiti direttamente da Massimiliano" data-en="Italy and Egypt, managed directly by Massimiliano">Italia ed Egitto, seguiti direttamente da Massimiliano</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- COLLABORA -->
 <section id="collaborate">
   <div class="container">
@@ -335,7 +392,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.45);text-align:center;padd
       <div class="reveal">
         <p class="section-label" data-it="Collabora con Noi" data-en="Work With Us">Collabora con Noi</p>
         <h2 class="section-title" data-it="Hai un appartamento?<br><em>Trasformalo</em><br>in reddito." data-en="Own a property?<br><em>Turn it</em><br>into income.">Hai un appartamento?<br><em>Trasformalo</em><br>in reddito.</h2>
-        <p class="section-text" data-it="Le Stanze di Roma e Le Stanze di Sharm collaborano con proprietari che desiderano valorizzare il proprio immobile attraverso la gestione di affitti brevi." data-en="Le Stanze di Roma and Le Stanze di Sharm partner with owners who want to enhance the value of their property through short-term rental management.">Le Stanze di Roma e Le Stanze di Sharm collaborano con proprietari che desiderano valorizzare il proprio immobile attraverso la gestione di affitti brevi.</p>
+        <p class="section-text" data-it="MDS Properties collabora con proprietari che desiderano valorizzare il proprio immobile attraverso la gestione di affitti brevi, a Roma, nel Cicolano e a Sharm El Sheikh." data-en="MDS Properties partners with owners who want to enhance the value of their property through short-term rental management, in Rome, Cicolano and Sharm El Sheikh.">MDS Properties collabora con proprietari che desiderano valorizzare il proprio immobile attraverso la gestione di affitti brevi, a Roma, nel Cicolano e a Sharm El Sheikh.</p>
         <ul class="collab-list">
           <li data-it="Gestione completa degli ospiti" data-en="Complete guest management">Gestione completa degli ospiti</li>
           <li data-it="Organizzazione dei soggiorni"   data-en="Stay organisation">Organizzazione dei soggiorni</li>
@@ -379,6 +436,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.45);text-align:center;padd
             <div class="contact-item-text">
               <h5 data-it="Le nostre strutture" data-en="Our properties">Le nostre strutture</h5>
               <a href="https://lestanzediroma.it/" target="_blank" rel="noopener">lestanzediroma.it</a><br>
+              <a href="https://www.lestanzedipescorocchiano.it/" target="_blank" rel="noopener">lestanzedipescorocchiano.it</a><br>
               <a href="https://lestanzedisharm.com/" target="_blank" rel="noopener">lestanzedisharm.com</a>
             </div>
           </div>
